@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            background: white;
+            min-height: 100vh;
+            font-size: 16px; /* Base font size for rem calculations */
+        }
+/* Navbar Body */
+.navbar-body {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: #fff; /* Background for navbar body */
+}
+
+/* Hidden checkbox */
+#nav-toggle {
+  display: none;
+}
+
+/* Hamburger button style */
+.hamburger {
+  font-size: 3rem; /* Size of the icons */
+  color: #807e7e;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Default display for the hamburger icon */
+.hamburger .fa-times {
+  display: none;
+}
+
+/* Toggle icon visibility */
+#nav-toggle:checked + .hamburger .fa-bars {
+  display: none;
+}
+
+#nav-toggle:checked + .hamburger .fa-times {
+  display: inline;
+}
+
+/* Navbar setup */
+.navbar {
+  display: none;
+  padding: 0;
+  position: absolute;
+  top: 100%; /* Position below the hamburger button */
+  left: 0; /* Align to the left of the hamburger button */
+  background: #fff; /* Background for navbar */
+  border: 1px solid #ddd; /* Border for navbar */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: max-content; /* Adjust width based on content */
+}
+
+/* Show navbar when checkbox is checked */
+#nav-toggle:checked ~ .navbar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between the nav items */
+  padding: 10px;
+}
+
+.nav-box {
+  background: #333;
+  color: white;
+  height: 3rem; /* Size of the boxes */
+  width: 3rem;  /* Size of the boxes */
+  border-radius: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.nav-box i {
+  font-size: 1.875rem; /* Font size of the icons */
+}
+
+.nav-box:hover {
+  color: #807e7e;
+  transform: scale(1.05);
+}
+
+.nav-boxlink {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+    </style>
+</head>
+<body>
+<div class="navbar-body"> 
+    <!-- Hidden Checkbox -->
+    <input type="checkbox" id="nav-toggle">
+
+    <!-- Hamburger Button -->
+    <label for="nav-toggle" class="hamburger">
+        <i class="fa fa-bars"></i>
+        <i class="fa fa-times"></i>
+    </label>
+    <!-- Nav Bar (hidden by default) -->
+    <div class="navbar">
+        <div class="nav-box"><a class="nav-boxlink" href="index.html" title="HOME"></a><i class="fa fa-home"></i></div>
+        <div class="nav-box"><a class="nav-boxlink" href="https://www.google.com/"  title="ABOUT ME"></a><i class="fa fa-user"></i></div>
+        <div class="nav-box"><a class="nav-boxlink" href="https://www.wikipedia.com/"  title="PORTFOLIO"></a><i class="fa fa-folder"></i></div>
+        <div class="nav-box"><a class="nav-boxlink" href="https://www.nasa.com/"  title="CONTACT"></a><i class="fa fa-phone"></i></div>
+    </div>
+</div>
+
+</body>
+</html>
