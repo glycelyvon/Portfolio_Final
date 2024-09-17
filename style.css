@@ -11,11 +11,11 @@ body {
 
 /* Background Styles */
 .background {
-  background-size: cover; /* Ensures the image covers the entire div */
- background-position: center; /* Centers the image */
- background-repeat: no-repeat; /* Prevents the image from repeating */
- height: 100%; /* Makes the div cover the full viewport height */
- width: 100%; /* Ensures the div covers the full viewport width */
+  background-size: cover; 
+ background-position: center;
+ background-repeat: no-repeat; 
+ height: 100%; 
+ width: 100%; 
  background-image: url('images/bg-homegreen.png');
  background-attachment: fixed;
 }
@@ -130,33 +130,13 @@ body {
    
 }
 @keyframes changetext{
-  0%{content: 'Full-stack Web developer';}
+  0%{content: 'Full-stack Developer';}
   20%{content: 'Data Analyst';}
   40%{content: ' Future Innovator';}
   60%{content: 'AI enthusiast';}
   80%{content: 'Software engineer';}
-  100%{content: 'Machine Learning Developer';}
-}
-.circle {
-  padding-top: 10px;
-  width: 25em;
-  height: 16em;
-  border-radius: 10%;
-  border: 0.1em solid #7d9b76; 
-  margin-bottom: 1.25em;
-  box-shadow: 
-    inset 5px 5px 10px rgba(0, 0, 0, 0.5), 
-    5px 5px 15px rgba(0, 0, 0, 0.2); 
-  position: relative;
- 
 }
 
-.circle video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; 
-  border-radius: 10%; 
-}
 
 
 
@@ -589,11 +569,17 @@ border-radius: 0;
 
 .profile-pic {
   border-radius: 50%;
-  border: 2px solid #545454;
+  border: 0.01px solid #40613f;
   width: 100%; 
-  max-width: 300px; 
+  max-width: 400px; 
   height: auto; 
   object-fit: cover;
+  box-shadow: 
+      inset 5px 5px 10px rgba(0, 0, 0, 0.5), 
+      5px 5px 15px rgba(0, 0, 0, 0.2); 
+    position: relative;
+    
+  
 }
 
 /* Content Container */
