@@ -20,11 +20,11 @@ body {
  background-attachment: fixed;
 }
 .background2 {
- background-size: cover; /* Ensures the image covers the entire div */
- background-position: center; /* Centers the image */
- background-repeat: no-repeat; /* Prevents the image from repeating */
- height: 100%; /* Makes the div cover the full viewport height */
- width: 100%; /* Ensures the div covers the full viewport width */
+ background-size: cover; 
+ background-position: center;
+ background-repeat: no-repeat; 
+ height: 100%; 
+ width: 100%; 
  background: linear-gradient(to bottom right, #ffffff, #f0f0f0);
  background-attachment: fixed;
 }
@@ -142,20 +142,20 @@ body {
   width: 25em;
   height: 16em;
   border-radius: 10%;
-  border: 0.1em solid #7d9b76; /* Adjusted border color */
+  border: 0.1em solid #7d9b76; 
   margin-bottom: 1.25em;
   box-shadow: 
-    inset 5px 5px 10px rgba(0, 0, 0, 0.5), /* Inner shadow for depth */
-    5px 5px 15px rgba(0, 0, 0, 0.2); /* Outer shadow for 3D effect */
+    inset 5px 5px 10px rgba(0, 0, 0, 0.5), 
+    5px 5px 15px rgba(0, 0, 0, 0.2); 
   position: relative;
-  overflow: hidden; /* Ensure video doesn't overflow the circle */
+ 
 }
 
 .circle video {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensure the video covers the entire circle */
-  border-radius: 10%; /* Match border radius of the circle */
+  object-fit: cover; 
+  border-radius: 10%; 
 }
 
 
@@ -174,7 +174,7 @@ h2{
 /* Button Styles */
 .button {
     margin-top: 2em;
-    background-color: #7d9b76; /* Fixed color syntax */
+    background-color: #7d9b76; 
     color: white;
     padding: 10px 20px;
     border: none;
@@ -488,81 +488,81 @@ border-radius: 0;
 
 .certcard {
   position: relative;
-  width: 400px; /* Increased width */
-  height: 25rem; /* Increased height */
-  border-radius: 1.25rem; /* Rounded corners */
+  width: 400px; 
+  height: 25rem; 
+  border-radius: 1.25rem; 
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
-  transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease-in-out; 
   display: flex;
-  flex-direction: column; /* Stack image and content vertically */
+  flex-direction: column; 
 }
 
 .certcard:hover {
-  transform: scale(1.05); /* Slight scaling effect on hover */
+  transform: scale(1.05); 
 }
 
 .imgBox-cert {
   width: 100%;
-  height: 60%; /* Adjust the image box height */
+  height: 60%;
   overflow: hidden;
 }
 
 .imgBox-cert img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Makes the image cover the area without distorting */
-  transition: transform 0.3s ease-in-out; /* Smooth zoom-in effect on hover */
+  object-fit: cover; 
+  transition: transform 0.3s ease-in-out; 
 }
 
 .certcard:hover .imgBox-cert img {
-  transform: scale(1.1); /* Slight zoom-in effect on hover */
+  transform: scale(1.1); 
 }
 
 .content {
-  padding: 15px; /* Add padding for content */
-  background-color: #ffffff; /* Background color for content */
-  flex: 1; /* Allow content to take available space */
-  text-align: center; /* Center the text */
+  padding: 15px; 
+  background-color: #ffffff; 
+  flex: 1; 
+  text-align: center; 
 }
 
 .content h4 {
-  font-size: 1.125rem; /* Increased font size */
+  font-size: 1.125rem; 
   color: #333;
-  margin: 0; /* Remove default margin */
-  line-height: 1.4; /* Better readability */
+  margin: 0; 
+  line-height: 1.4; 
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
   .certcard {
-    width: 300px; /* Adjust width for medium screens */
-    height: auto; /* Allow height to adjust automatically */
+    width: 300px; 
+    height: auto;
   }
 }
 
 @media (max-width: 768px) {
   .certcard {
-    width: 100%; /* Make cert cards full-width on smaller screens */
-    height: auto; /* Adjust height to fit content */
+    width: 100%; 
+    height: auto; 
   }
 
   .imgBox-cert {
-    height: auto; /* Allow image box to adjust */
+    height: auto; 
   }
 }
 
 
 .flex-container {
-  width: 80%; /* You can adjust this value depending on the size you want */
-  max-width: 1200px; /* Max width to control the container size on larger screens */
+  width: 80%; 
+  max-width: 1200px; 
   margin: 10vh 10vw 10vh; 
   display: flex;
-  flex-direction: column; /* Ensures content inside stacks vertically */
-  align-items: center; /* Center content horizontally */
+  flex-direction: column; 
+  align-items: center; 
   justify-content: center;
-  box-sizing: border-box; /* Includes padding in width calculation */
-  text-align: center; /* Center text within the container */
+  box-sizing: border-box; 
+  text-align: center; 
  
 }
 
@@ -575,13 +575,13 @@ border-radius: 0;
   align-items: center;
   padding: 10px;
   box-sizing: border-box;
-  gap: 2rem; /* Adds space between the profile pic and content */
-  max-width: 100%; /* Ensures the container doesn't exceed the screen width */
+  gap: 2rem; 
+  max-width: 100%;
 }
 
 /* Profile Picture Container */
 .profile-pic-container {
-  flex: 1; /* Makes the profile picture container take up space relative to the container */
+  flex: 1; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -590,19 +590,19 @@ border-radius: 0;
 .profile-pic {
   border-radius: 50%;
   border: 2px solid #545454;
-  width: 100%; /* Make the image responsive */
-  max-width: 300px; /* Set a max-width for larger screens */
-  height: auto; /* Maintain aspect ratio */
+  width: 100%; 
+  max-width: 300px; 
+  height: auto; 
   object-fit: cover;
 }
 
 /* Content Container */
 .content-container {
-  flex: 2; /* Takes up more space than the image container */
+  flex: 2; 
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Vertically centers content */
-  align-items: center; /* Horizontally centers content */
+  justify-content: center; 
+  align-items: center; 
   padding: 20px;
   box-sizing: border-box;
   text-align: center;
@@ -659,6 +659,7 @@ border-radius: 0;
   align-items: center;
   justify-content: center;
   gap: 10px;
+  text-decoration: none;
 }
 
 .survey-button:hover {
@@ -668,7 +669,7 @@ border-radius: 0;
 /* Responsive Design */
 @media (max-width: 1024px) {
   .profile-pic {
-    max-width: 250px; /* Reduce the profile pic size on medium screens */
+    max-width: 250px; 
   }
 
   .title {
@@ -682,13 +683,13 @@ border-radius: 0;
 
 @media (max-width: 768px) {
   .concontainer {
-    flex-direction: column; /* Stack items vertically on smaller screens */
-    align-items: center; /* Center everything */
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
   .profile-pic {
-    max-width: 200px; /* Reduce the profile pic size on smaller screens */
+    max-width: 200px; 
   }
 
   .content-container {
@@ -706,7 +707,7 @@ border-radius: 0;
 
 @media (max-width: 480px) {
   .profile-pic {
-    max-width: 150px; /* Further reduce profile pic size on mobile */
+    max-width: 150px;
   }
 
   .title {
