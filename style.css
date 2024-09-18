@@ -126,7 +126,7 @@ body {
 .change-text:after{
     content: '';
     animation: changetext 8s infinite linear;
-       color: rgb(0, 0, 0);
+       color: rgb(164, 164, 164);
    
 }
 @keyframes changetext{
@@ -135,6 +135,7 @@ body {
   40%{content: ' Future Innovator';}
   60%{content: 'AI enthusiast';}
   80%{content: 'Software engineer';}
+  100%{content: 'Business Analyst';}
 }
 
 
@@ -382,7 +383,7 @@ h3{
         imgBox-cert{
           position: absolute;
           inset: 0;
-border-radius: 0;
+          border-radius: 0;
           img {
             width: 100%;
             height: 100%;
