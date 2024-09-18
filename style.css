@@ -149,9 +149,7 @@ body {
     font-weight:900;
     margin-bottom: 10px;
 }
-h2{
-  color: #545454;
-}
+
 /* Button Styles */
 .button {
     margin-top: 2em;
@@ -198,7 +196,7 @@ h2 {
   margin-inline-end: 0px;
   font-weight: bold;
   unicode-bidi: isolate;
-  color: 545454;
+  color: #545454;
 }
 
 /* About Section */
@@ -249,7 +247,6 @@ h2 {
 .skill-header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 0.rem;
 }
 
 .progress-bar-outer {
