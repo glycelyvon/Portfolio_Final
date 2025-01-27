@@ -132,14 +132,11 @@ body {
 @keyframes changetext{
   0%{content: 'Full-stack Developer';}
   20%{content: 'Data Analyst';}
-  40%{content: ' Future Innovator';}
+  40%{content: ' Project Manager';}
   60%{content: 'AI enthusiast';}
   80%{content: 'Software engineer';}
   100%{content: 'Business Analyst';}
 }
-
-
-
 
 /* Title Styles */
 .title {
@@ -284,7 +281,6 @@ h2 {
 
 
 section {
-  
   padding-block: min(20vh, 2rem);
   width: calc(min(76.5rem, 90%));
   margin-inline: auto;
@@ -301,7 +297,7 @@ h3{
   .portfolio_container {
     margin-top: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    grid-template-columns: repeat(3, minmax(15rem, 1fr));
     gap: 2rem;
 
 .card-inner{
@@ -457,17 +453,16 @@ h3{
 
 /*CERTIFICATS*/
 .cert_container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px; /* Space between cards */
-  justify-content: center; /* Center the cards */
-  padding: 20px;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(15rem, 1fr));
+  gap: 2rem;
 }
 
 .certcard {
   position: relative;
-  width: 400px; 
-  height: 25rem; 
+  width: 355px; 
+  height: 23rem; 
   border-radius: 1.25rem; 
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
